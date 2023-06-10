@@ -24,6 +24,12 @@ if res.response is not None:
     # handle response
 ```
 
+
+### Response
+
+**[operations.OrderSchemaAPIV1OrdersSchemaGetResponse](../../models/operations/orderschemaapiv1ordersschemagetresponse.md)**
+
+
 ## order_validated_api_v1_orders_post
 
 Checks if JSON has valid schema and adds request to create new order. No multiple orders will be created for the same **order_id**, even if request is accepted. Only first order request for **order_id** is created.
@@ -114,3 +120,16 @@ res = s.order.order_validated_api_v1_orders_post(req, operations.OrderValidatedA
 if res.response is not None:
     # handle response
 ```
+
+### Parameters
+
+| Parameter                                                                                                            | Type                                                                                                                 | Required                                                                                                             | Description                                                                                                          |
+| -------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| `request`                                                                                                            | [shared.Order](../../models/shared/order.md)                                                                         | :heavy_check_mark:                                                                                                   | The request object to use for the request.                                                                           |
+| `security`                                                                                                           | [operations.OrderValidatedAPIV1OrdersPostSecurity](../../models/operations/ordervalidatedapiv1orderspostsecurity.md) | :heavy_check_mark:                                                                                                   | The security requirements to use for the request.                                                                    |
+
+
+### Response
+
+**[operations.OrderValidatedAPIV1OrdersPostResponse](../../models/operations/ordervalidatedapiv1orderspostresponse.md)**
+

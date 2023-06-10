@@ -5,9 +5,9 @@ import dataclasses
 from typing import Optional
 
 
+
 @dataclasses.dataclass
 class BodyLoginAPIV1TokenPost:
-    
     password: str = dataclasses.field(metadata={'form': { 'field_name': 'password' }})
     username: str = dataclasses.field(metadata={'form': { 'field_name': 'username' }})
     client_id: Optional[str] = dataclasses.field(default=None, metadata={'form': { 'field_name': 'client_id' }})
@@ -15,3 +15,4 @@ class BodyLoginAPIV1TokenPost:
     grant_type: Optional[str] = dataclasses.field(default=None, metadata={'form': { 'field_name': 'grant_type' }})
     scope: Optional[str] = dataclasses.field(default=None, metadata={'form': { 'field_name': 'scope' }})
     
+

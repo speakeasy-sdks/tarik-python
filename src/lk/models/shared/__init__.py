@@ -19,4 +19,4 @@ from .shipping import *
 from .street import *
 from .validationerror import *
 
-__all__ = ["BodyLoginAPIV1TokenPost","Customer","HTTPValidationError","Item","NPPackStation","Order","OrderStatus","OrderStatuses","OrderTicket","OrderTicketStatus","Payment","PaymentMethod","PaymentStatus","Recipient","Response","Shipping","ShippingMethod","Street","ValidationError"]
+__all__ = ["BodyLoginAPIV1TokenPost","Customer","HTTPValidationError","Item","NPPackStation","Order","OrderStatus","OrderStatuses","OrderTicket","OrderTicketStatus","Payment","PaymentMethod","PaymentStatus","Recipient","Response","ResponseData","Shipping","ShippingMethod","Street","ValidationError"]

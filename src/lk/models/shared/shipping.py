@@ -14,10 +14,10 @@ class ShippingMethod(str, Enum):
 
 
 @dataclass_json(undefined=Undefined.EXCLUDE)
+
 @dataclasses.dataclass
 class Shipping:
     r"""Represents info about shipping order"""
-    
     address: shared_nppackstation.NPPackStation = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('address') }})
     r"""Represents info about shipping via `Nova Posta PackStation` method"""
     method: ShippingMethod = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('method') }})
@@ -25,3 +25,4 @@ class Shipping:
     r"""Represents info about recipient"""
     price: Optional[float] = dataclasses.field(default=None, metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('price'), 'exclude': lambda f: f is None }})
     
+

@@ -9,12 +9,13 @@ from lk import utils
 
 
 @dataclass_json(undefined=Undefined.EXCLUDE)
+
 @dataclasses.dataclass
 class Payment:
     r"""Represents info about order payment"""
-    
     method: shared_paymentmethod.PaymentMethod = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('method') }})
     r"""This field could be numeric string"""
     status: shared_paymentstatus.PaymentStatus = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('status') }})
     r"""This field could be numeric string"""
     
+

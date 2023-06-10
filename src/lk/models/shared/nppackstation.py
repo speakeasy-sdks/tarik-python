@@ -8,10 +8,10 @@ from lk import utils
 
 
 @dataclass_json(undefined=Undefined.EXCLUDE)
+
 @dataclasses.dataclass
 class NPPackStation:
     r"""Represents info about shipping via `Nova Posta PackStation` method"""
-    
     city: str = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('city') }})
     city_id: str = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('city_id') }})
     comment: str = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('comment') }})
@@ -25,3 +25,4 @@ class NPPackStation:
     warehouse_number: int = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('warehouse_number') }})
     r"""This field could be numeric string"""
     
+

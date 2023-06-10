@@ -36,25 +36,25 @@ if res.login_api_v1_token_post_200_application_json_any is not None:
 ## Available Resources and Operations
 
 
-### [authentication](docs/authentication/README.md)
+### [authentication](docs/sdks/authentication/README.md)
 
-* [login_api_v1_token_post](docs/authentication/README.md#login_api_v1_token_post) - Login
+* [login_api_v1_token_post](docs/sdks/authentication/README.md#login_api_v1_token_post) - Login
 
-### [order](docs/order/README.md)
+### [order](docs/sdks/order/README.md)
 
-* [order_schema_api_v1_orders_schema_get](docs/order/README.md#order_schema_api_v1_orders_schema_get) - Get JSON schema for order
-* [order_validated_api_v1_orders_post](docs/order/README.md#order_validated_api_v1_orders_post) - Add new order
+* [order_schema_api_v1_orders_schema_get](docs/sdks/order/README.md#order_schema_api_v1_orders_schema_get) - Get JSON schema for order
+* [order_validated_api_v1_orders_post](docs/sdks/order/README.md#order_validated_api_v1_orders_post) - Add new order
 
-### [order_status](docs/orderstatus/README.md)
+### [order_status](docs/sdks/orderstatus/README.md)
 
-* [status_request_validated_api_v1_orders_order_id_status_request_post](docs/orderstatus/README.md#status_request_validated_api_v1_orders_order_id_status_request_post) - Send order status request
-* [status_schema_api_v1_orders_status_schema_get](docs/orderstatus/README.md#status_schema_api_v1_orders_status_schema_get) - Get JSON schema for order status
-* [status_validated_api_v1_orders_order_id_status_post](docs/orderstatus/README.md#status_validated_api_v1_orders_order_id_status_post) - Set order status
+* [status_request_validated_api_v1_orders_order_id_status_request_post](docs/sdks/orderstatus/README.md#status_request_validated_api_v1_orders_order_id_status_request_post) - Send order status request
+* [status_schema_api_v1_orders_status_schema_get](docs/sdks/orderstatus/README.md#status_schema_api_v1_orders_status_schema_get) - Get JSON schema for order status
+* [status_validated_api_v1_orders_order_id_status_post](docs/sdks/orderstatus/README.md#status_validated_api_v1_orders_order_id_status_post) - Set order status
 
-### [order_ticket](docs/orderticket/README.md)
+### [order_ticket](docs/sdks/orderticket/README.md)
 
-* [new_ticket_api_v1_ticket_post](docs/orderticket/README.md#new_ticket_api_v1_ticket_post) - Add new order ticket
-* [ticket_status_api_v1_ticket_ticket_id_comment_post](docs/orderticket/README.md#ticket_status_api_v1_ticket_ticket_id_comment_post) - Add ticket comment
+* [new_ticket_api_v1_ticket_post](docs/sdks/orderticket/README.md#new_ticket_api_v1_ticket_post) - Add new order ticket
+* [ticket_status_api_v1_ticket_ticket_id_comment_post](docs/sdks/orderticket/README.md#ticket_status_api_v1_ticket_ticket_id_comment_post) - Add ticket comment
 <!-- End SDK Available Operations -->
 
 ### Maturity

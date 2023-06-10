@@ -9,22 +9,26 @@ from ..shared import response as shared_response
 from typing import Optional
 
 
+
 @dataclasses.dataclass
 class StatusRequestValidatedAPIV1OrdersOrderIDStatusRequestPostSecurity:
-    
     o_auth2_password_bearer: str = dataclasses.field(metadata={'security': { 'scheme': True, 'type': 'oauth2', 'field_name': 'Authorization' }})
     
 
+
+
+
 @dataclasses.dataclass
 class StatusRequestValidatedAPIV1OrdersOrderIDStatusRequestPostRequest:
-    
     order_id: int = dataclasses.field(metadata={'path_param': { 'field_name': 'order_id', 'style': 'simple', 'explode': False }})
     order_status: shared_orderstatus.OrderStatus = dataclasses.field(metadata={'request': { 'media_type': 'application/json' }})
     
 
+
+
+
 @dataclasses.dataclass
 class StatusRequestValidatedAPIV1OrdersOrderIDStatusRequestPostResponse:
-    
     content_type: str = dataclasses.field()
     status_code: int = dataclasses.field()
     http_validation_error: Optional[shared_httpvalidationerror.HTTPValidationError] = dataclasses.field(default=None)
@@ -33,3 +37,4 @@ class StatusRequestValidatedAPIV1OrdersOrderIDStatusRequestPostResponse:
     response: Optional[shared_response.Response] = dataclasses.field(default=None)
     r"""Successful Response"""
     
+

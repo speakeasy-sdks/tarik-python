@@ -7,10 +7,10 @@ from lk import utils
 
 
 @dataclass_json(undefined=Undefined.EXCLUDE)
+
 @dataclasses.dataclass
 class Customer:
     r"""Represents info about order customer"""
-    
     email: str = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('email') }})
     erp_id: int = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('erp_id') }})
     r"""This field could be numeric string"""
@@ -23,3 +23,4 @@ class Customer:
     middle_name: str = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('middle_name') }})
     phone: str = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('phone') }})
     
+

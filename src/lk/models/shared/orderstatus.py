@@ -8,12 +8,13 @@ from lk import utils
 
 
 @dataclass_json(undefined=Undefined.EXCLUDE)
+
 @dataclasses.dataclass
 class OrderStatus:
     r"""Represents info about new order status"""
-    
     order_id: int = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('order_id') }})
     r"""This field could be numeric string"""
     status: shared_orderstatuses.OrderStatuses = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('status') }})
     r"""This field could be numeric string"""
     
+

@@ -14,10 +14,10 @@ from marshmallow import fields
 
 
 @dataclass_json(undefined=Undefined.EXCLUDE)
+
 @dataclasses.dataclass
 class Order:
     r"""Represents full info about order"""
-    
     created_at: datetime = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('created_at'), 'encoder': utils.datetimeisoformat(False), 'decoder': dateutil.parser.isoparse, 'mm_field': fields.DateTime(format='iso') }})
     r"""Format YYYY-MM-DD[T]HH:MM"""
     customer: shared_customer.Customer = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('customer') }})
@@ -32,3 +32,4 @@ class Order:
     shipping: shared_shipping.Shipping = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('shipping') }})
     r"""Represents info about shipping order"""
     
+

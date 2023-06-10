@@ -11,9 +11,9 @@ from marshmallow import fields
 
 
 @dataclass_json(undefined=Undefined.EXCLUDE)
+
 @dataclasses.dataclass
 class OrderTicket:
-    
     decision: str = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('decision') }})
     r"""Decision"""
     order_id: int = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('order_id') }})
@@ -25,3 +25,4 @@ class OrderTicket:
     ticket_id: str = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('ticket_id') }})
     r"""BPM ticket ID"""
     
+

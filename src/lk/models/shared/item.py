@@ -7,10 +7,10 @@ from lk import utils
 
 
 @dataclass_json(undefined=Undefined.EXCLUDE)
+
 @dataclasses.dataclass
 class Item:
     r"""Represents info about each position in order"""
-    
     name: str = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('name') }})
     r"""Item name"""
     price: float = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('price') }})
@@ -20,3 +20,4 @@ class Item:
     sku: int = dataclasses.field(metadata={'dataclasses_json': { 'letter_case': utils.get_field_name('sku') }})
     r"""This field could be numeric string"""
     
+
